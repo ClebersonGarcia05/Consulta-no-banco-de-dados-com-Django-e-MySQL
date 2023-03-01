@@ -1,0 +1,19 @@
+version: "3.10"
+services:
+    api:
+        build: ./user-api/api
+        command: ./manage.py runserver 0.0.0.0:8000
+        volumes: 
+            - ./user-api/api:/code/
+        ports:
+            - 8000:8000
+        depends_on:
+            - db
+
+    db:
+        image: mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=171819
+            - MYSQL_DATABASE=cadastro
+        ports: 
+            - 3306:3306
