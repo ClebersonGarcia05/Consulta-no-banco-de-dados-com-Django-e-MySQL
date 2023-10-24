@@ -1,7 +1,7 @@
 asgiref==3.6.0
 certifi==2022.12.7
 coverage==7.2.1
-Django==4.1.7
+Django==4.1.10
 django-coverage==1.2.4
 django-elasticsearch-dsl==7.3
 django-phonenumber-field==7.0.2
